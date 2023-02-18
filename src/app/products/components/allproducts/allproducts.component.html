@@ -1,0 +1,16 @@
+<div class="box mt-5">
+    <div class="my-2 w-25" >
+        <!-- data elly h pass feh , title is a string not a property in ts -->
+        <!--(selectedvalue) l2n hwa(child=select) elly hyb3tlii eldata w ana hst2blha fy method -->
+        <app-select [data]="categories " [title]="'categories : '" (selectedvalue)="filtercategory($event)"></app-select>
+
+    </div>
+    <div class="row" *ngIf="!loading">
+        <div class="col-md-3 col-sm-12"  *ngFor="let item of products" routerLink="/details/{{item.id}}">
+            <app-product [data]='item'  (item)="addtocart($event)"></app-product>
+</div>
+</div>
+ <div class="text-center w-100" *ngIf="loading">
+    <app-spinner></app-spinner> 
+ </div>
+</div>
