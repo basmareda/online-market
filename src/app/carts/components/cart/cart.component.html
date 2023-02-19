@@ -1,1 +1,51 @@
-<p>cart works!</p>
+<div class="cartBox">
+    <h1 class="text-danger">shopping cart</h1>
+    <div class="headCart">
+        <p class="lead"> you have <label for="" class="taxt-danger"> 2 </label>items in your cart </p>
+        <span class="text-danger cart-header">clear shopping cart</span>
+    </div>
+     <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>name</th>
+                <th>price</th>
+                <th style="width: 25%;">Quantity</th>
+                <th>Totle</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <img > </td>
+                <td>tite</td>
+                <td>150 LE</td>
+                <td>
+                    <div class="Quantity">
+                        <button class="btn btn-dark"> + </button>
+                        <input type="number" class="form-control" min="1">
+                        <button class="btn btn-dark"> -  </button>
+                    </div>
+                </td>
+                <td> 650 LE</td>
+                <td>
+                    <button class="btn btn-danger"> Delete </button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>total : 4778 LE</th>
+                <th><button class="btn btn-success">Order Now  </button></th>
+            </tr>
+        </tfoot>
+     </table>
+</div>      
+<div class="alert alert-sucess " role="alert"> <strong>well Done !!</strong>
+    Your Order is successfully completed 
+
+</div>

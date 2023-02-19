@@ -17,18 +17,19 @@ import { FormsModule } from '@angular/forms';
     SelectComponent
   ],
   imports: [
+    RouterModule,
     CommonModule,
     BrowserModule,
-       RouterModule,
-       HttpClientModule,
-       FormsModule,
+      HttpClientModule,
+    FormsModule,
   ],
-  exports:[
+  exports: [
+    RouterModule,
     HeaderComponent,
     SpinnerComponent,
     SelectComponent,
     FormsModule,
-    RouterModule
+   
   ]
 })
 export class SharedModule { }

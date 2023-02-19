@@ -1,6 +1,6 @@
 nav {
     background: linear-gradient(to right, #076b96,#00789c);
-    color: aliceblue;
+    color: rgb(230, 237, 243);
 
     .content{
     display: flex;
@@ -16,6 +16,9 @@ nav {
         li{
             cursor: pointer;
             font-size: 22px;
+            
+        }
+        a{
             color: #FFF;
             text-decoration: none;
         }

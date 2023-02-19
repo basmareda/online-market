@@ -6,7 +6,7 @@
 
     </div>
     <div class="row" *ngIf="!loading">
-        <div class="col-md-3 col-sm-12"  *ngFor="let item of products" routerLink="/details/{{item.id}}">
+        <div class="col-md-3 col-sm-12"  *ngFor="let item of products" >
             <app-product [data]='item'  (item)="addtocart($event)"></app-product>
 </div>
 </div>

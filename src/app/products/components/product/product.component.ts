@@ -12,6 +12,8 @@ export class ProductComponent {
 @Output() item=new EventEmitter()
 addbutton:boolean=false;
 amount:number=0
+id:any
+
 add(){
   //hb3t elitem ely wa2f 3leha ely hya data
   //hb3tha k object m3 el3dd
