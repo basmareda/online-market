@@ -14,7 +14,7 @@
 
     <div class="d-flex w-50" *ngIf="addbutton">
         <input type="number" class="form-control" [(ngModel)]="amount">
-        <button class="btn btn-danger" (click)="add()"> Add</button>
+        <button class="btn btn-danger" (click)="add(); addbutton=false "> Add</button>
     </div>
     <span>{{data.price}}LE</span>
 </div>
