@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { product } from '../../models/product';
 import { ProductsService } from '../../services/products.service';
 
 @Component({
@@ -8,8 +9,8 @@ import { ProductsService } from '../../services/products.service';
 })
 export class AllproductsComponent {
 //array declirations
-products:any[]=[]
-categories:any[]=[]
+products:product[]=[] //product is a custom type
+categories:string[]=[]
 loading:boolean=false
 cartproducts:any[]=[]  //array to store data which comes from local storage 
 
